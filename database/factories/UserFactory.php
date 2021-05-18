@@ -24,9 +24,11 @@ class UserFactory extends Factory
     public function definition()
     {
         return [
-           # 'customer_id'   => Customer::factory(),
+            'customer_id'   => Customer::factory(),
             'email'         => $this->faker->unique()->safeEmail(),
-            'state'         => null
+            'state'         => null,
+            'created_at'    => $this->faker->dateTimeBetween('-2 months')->format('Y-m-d'),
+            'updated_at'    => $this->faker->dateTimeBetween('-1 months')->format('Y-m-d'),
         ];
     }
 

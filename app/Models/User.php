@@ -11,7 +11,7 @@ class User extends Model
 
     protected $hidden = ['updated_at', 'state'];
 
-    protected $fillable = ['email', 'customer_id'];
+    protected $fillable = ['email', 'customer_id', 'created_at'];
 
     const CREATED_STATE = 1;
     const ACTIVATED_STATE = 2;

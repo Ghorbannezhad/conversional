@@ -23,9 +23,9 @@ class SessionFactory extends Factory
     public function definition()
     {
         return [
-            #'user_id'   => User::factory(),
-            'activated' => $this->faker->date(),
-            'appointment' => $this->faker->date()
+            'user_id'   => User::factory(),
+            'activated' => $this->faker->dateTimeBetween('-5 months'),
+            'appointment' => $this->faker->dateTimeBetween('-4 months')
         ];
     }
 }

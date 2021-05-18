@@ -15,10 +15,7 @@ class SessionSeeder extends Seeder
      */
     public function run()
     {
-        Session::factory()->count(3)
-            ->for(User::factory()->state([
-                'id'    => 1,
-            ]))
+        Session::factory()->count(6)
             ->create();
     }
 }

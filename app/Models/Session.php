@@ -11,8 +11,11 @@ class Session extends Model
 
     protected $fillable = ['user_id', 'activated', 'appointment'];
 
+    public const UPDATED_AT = null;
+    public const CREATED_AT = null;
+
     //Add relation to user
     public function user(){
-        $this->belongsTo(User::class, 'user_id');
+       return $this->belongsTo(User::class, 'user_id');
     }
 }

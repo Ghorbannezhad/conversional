@@ -16,6 +16,6 @@ class Customer extends Model
 
     //Add relation to user
     public function users(){
-        $this->hasMany(User::class, 'customer_id');
+        return $this->hasMany(User::class, 'customer_id');
     }
 }

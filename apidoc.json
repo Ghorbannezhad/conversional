@@ -1,0 +1,11 @@
+{
+  "name": "Conversional",
+  "version": "1.0.0",
+  "description": "Conversional invoice Documentation",
+  "title": "Teen Ball",
+  "url": "http://conversional/api/v1/",
+  "template": {
+    "withCompare": true,
+    "withGenerator": true
+  }
+}

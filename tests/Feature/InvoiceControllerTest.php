@@ -2,9 +2,6 @@
 
 namespace Tests\Feature;
 
-use App\Models\Customer;
-use App\Models\User;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Http\Response;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
@@ -45,7 +42,7 @@ class InvoiceControllerTest extends TestCase
 
     public function testGetInvoiceSuccessfully(){
 
-        $id = 23;
+        $id = 1;
         $this->json('get', 'api/invoices/'. $id)
             ->assertStatus(Response::HTTP_OK)
             ->assertJsonStructure(

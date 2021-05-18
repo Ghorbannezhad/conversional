@@ -10,6 +10,9 @@ This application is developed for invoice creation based on predifined accountin
 1. Install vendor:<br>
 `$composer update`
 
+2. Generate key:<br>
+`$php artisan key:generate`
+
 2. Create database and set *.env* file 
 
 3. Run migrations:<br>

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Conversional invoice Documentation",
   "title": "Teen Ball",
-  "url": "http://conversional/api/v1/",
+  "url": "http://conversional/api/",
   "template": {
     "withCompare": true,
     "withGenerator": true

@@ -9,11 +9,11 @@ class InvoiceDoc
     /**
      * @api {post} invoices Create Invoice
      * @apiName Create Invoice
-     * @apiGroup invoice
+     * @apiGroup Invoice
      *
-     * @@apiParam {integer} customer_id
-     * @@apiParam {date} from format Y-m-d
-     * @@apiParam {date} to  format Y-m-d
+     * @apiParam {integer} customer_id
+     * @apiParam {date} from format `Y-m-d`
+     * @apiParam {date} to  format `Y-m-d`
      *
      * @apiSuccessExample Success-Response:
      * HTTP/1.1 200 OK
@@ -46,7 +46,7 @@ class InvoiceDoc
     /**
      * @api {get} invoices/{id} Invoice Detail
      * @apiName Invoice Detail
-     * @apiGroup invoice
+     * @apiGroup Invoice
      *
      *
      * @apiSuccessExample Success-Response:
